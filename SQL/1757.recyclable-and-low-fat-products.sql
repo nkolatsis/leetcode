@@ -6,8 +6,7 @@
 
 -- @lc code=start
 -- Write your MySQL query statement below
-
--- @lc code=end
-
 SELECT product_id from Products
 WHERE low_fats = 'Y' AND recyclable = 'Y';
+
+-- @lc code=end
