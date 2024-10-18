@@ -1,4 +1,4 @@
-package Basics;
+package basics;
 
 /*
  * @lc app=leetcode id=1672 lang=java
@@ -23,4 +23,3 @@ class Solution {
     }
 }
 // @lc code=end
-

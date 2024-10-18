@@ -1,4 +1,4 @@
-package Basics;
+package basics;
 
 /*
  * @lc app=leetcode id=1342 lang=java
@@ -11,11 +11,10 @@ class Solution {
     public int numberOfSteps(int num) {
         int steps = 0;
         while (num != 0) {
-            num = num % 2 == 0 ? num / 2 : num -1;
+            num = num % 2 == 0 ? num / 2 : num - 1;
             steps++;
         }
         return steps;
     }
 }
 // @lc code=end
-

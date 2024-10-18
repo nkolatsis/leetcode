@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 
 /*
  * @lc app=leetcode id=1071 lang=java
@@ -10,17 +10,17 @@ package Arrays;
 class Solution {
     public static String gcdOfStrings(String str1, String str2) {
         String gcd = "";
-        if ((str1+str2).equals(str2+str1)) {
+        if ((str1 + str2).equals(str2 + str1)) {
             String shorty = str1.length() < str2.length() ? str1 : str2;
             for (int i = shorty.length() - 1; i >= 0; i--) {
                 if (isValidGcd(shorty, str1) && isValidGcd(shorty, str2)) {
                     gcd = shorty;
                     i = 0;
                 } else {
-                    shorty = shorty.substring(0, i-1);
+                    shorty = shorty.substring(0, i - 1);
                 }
             }
-        }        
+        }
         return gcd;
     }
 
@@ -39,4 +39,3 @@ class Solution {
     }
 }
 // @lc code=end
-

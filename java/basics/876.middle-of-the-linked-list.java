@@ -1,7 +1,7 @@
-package Basics;
+package basics;
 
 import java.util.ArrayList;
-import UtilFunctions.ListNode;
+import util.ListNode;
 
 /*
  * @lc app=leetcode id=876 lang=java
@@ -13,11 +13,11 @@ import UtilFunctions.ListNode;
 /**
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * int val;
+ * ListNode next;
+ * ListNode() {}
+ * ListNode(int val) { this.val = val; }
+ * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {
@@ -32,13 +32,12 @@ class Solution {
                 break;
             }
         }
-        
+
         int size = nodedList.size();
-        int middle = size % 2 == 0 ? size / 2 : (int) Math.ceil(size/2);
+        int middle = size % 2 == 0 ? size / 2 : (int) Math.ceil(size / 2);
 
         return nodedList.get(middle);
 
     }
 }
 // @lc code=end
-
